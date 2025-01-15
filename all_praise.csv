@@ -1,9 +1,17 @@
-;;;;;;
-rowid;adjective;noun;;;;
-1;opalescent;tree shark;;;;
-2;rainbow-infused;space unicorn;;;;
-3;beautiful, tropical;fish;;;;
-4;beautiful;unicorn-nurse;;;;
-5;poetic, noble;land mermaid;;;;
-6;perfect;sunflower;;;;
-7;beautiful, rule-breaking;moth;;;;
+rowid;adjective;noun
+1;opalescent;tree shark
+2;rainbow-infused;space unicorn
+3;beautiful, tropical;fish
+4;beautiful;unicorn-nurse
+5;poetic, noble;land mermaid
+6;perfect;sunflower
+7;beautiful, rule-breaking;moth
+8;tricky;minx
+9;beautiful, glowing;sun-goddess
+10;beautiful, naïve, sophisticated;newborn baby
+11;beautiful, talented, brilliant, powerful;musk ox
+12;beautiful, sassy;mannequin-come-to-life
+13;cunning, pliable, chestnut-haired;sunfish
+14;tricky;bastard
+15;devious;bastard
+16;coy;bastard

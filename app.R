@@ -17,9 +17,12 @@ ui <- fluidPage(
   h3("I love you and I like you <3"),
   br(),
   br(),
+  # choose random or canon praise
+  radioButtons(inputId = "type", label = "What kind of praise?",
+               choices = c("Random", "Canon")
+  ),
   # input from user via action buttons 
-  actionButton(inputId = 'answer1', label = 'Please Praise Freely!', width = '175px'),
-  actionButton(inputId = 'answer2', label = 'Only Canon Praise.', width = '175px'),
+  actionButton(inputId = 'praise', label = 'Praise', width = '100px'),
   br(),
   br(),
   br(),
@@ -55,16 +58,16 @@ noun <- as.vector(data$noun)
 # backend processes (which runs once per user/session)
 server <- function(input, output, session) {
 
-  word.pair <- "something"
-  
-  word.pair <- eventReactive(input$answer1, {
+  compliment <- eventReactive(input$praise, {
+    if (input$type == "Random")
     paste(sample(adjective, 1), sample(noun, 1))
+    
+    else if (input$type == "Canon"){
+      line <- sample(seq_along(adjective), 1)
+      paste(adjective[line], noun[line])
+    }
   })
-  
-  word.pair <- eventReactive(input$answer2, {
-    line <- sample(seq_along(adjective), 1)
-    paste(adjective[line], noun[line])
-  })
+
   
   # #make a reactive object
   # word.pair <- reactive( {
@@ -88,7 +91,7 @@ server <- function(input, output, session) {
   
   # render word.pairs as output to the ui
   output$newpair <- renderText({ 
-    word.pair()
+    compliment()
   })
   
   # # set of commands to be run in isolation

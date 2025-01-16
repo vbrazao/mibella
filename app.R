@@ -13,7 +13,7 @@ ui <- fluidPage(
   h2("Please enjoy all the Leslie Knope-style praise you could ever wish for!"),
   # show a compliment
   h2(textOutput(outputId = 'compliment')),
-  h3("I love you and I like you <3"),
+  h3(textOutput(outputId = 'message')),
   br(),
   br(),
   # choose random or canon praise
@@ -51,17 +51,30 @@ server <- function(input, output, session) {
     # ok not banner, but if look below, here live the different greetings! extraordinary
     paste(
       sample(
-        c("Oh,", "Dearest", "My", "Esteemed", "OLÁ"),
+        c("Oh,", "Dearest", "My", "Esteemed", "OLÁ", "Hi", "Hello"),
         size = 1
       ), 
       
       sample(
         c("Buba,", "Pumpkin,", "Bebe,", "Yaya,", "mi Bella,", "Білочка,", 
-          "Love,", "Darling,", "Boo,", "CIVIL,"
+          "Love,", "Darling,", "Boo,", "CIVIL,", "Beb,", "Bubster,", "Буб,"
+          
           ),
         size = 1
       ),
       "you"
+    )
+  })
+  
+  message <- eventReactive(input$praise, {
+    
+    # Oh, there are several things I would like to say, Dolores!
+    sample(
+      c(
+        "I love you and I like you <3",
+        "You have the cutest butt :3",
+        "Com licença, obrigado, com licençaobrigadocomlic-"
+      ), size = 1
     )
   })
 
@@ -70,9 +83,9 @@ server <- function(input, output, session) {
     paste(greeting(), compliment())
   }, sep = "")
   
-  # output$greeting <- renderText({
-  #   greeting()
-  # })
+  output$message <- renderText({ 
+    message()
+  })
 
 }
 

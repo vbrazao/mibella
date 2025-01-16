@@ -1,9 +1,7 @@
-# shinyhumor
+# Mi bella!
 
-Source code for the R shiny application used to collect humor ratings of randomly generated English word pairs. The words were selected from [Engelthaler and Hills (2018)](https://link.springer.com/article/10.3758/s13428-017-0930-6). This data is published in Siew, C. S. Q., Engelthaler, T., & Hills, T. (in press). Nymph Piss and Gravy Orgies: Local and Global Contrast Effects in Relational Humor. *Journal of Experimental Psychology: Learning, Memory, and Cognition.* 
+It is our tenth anniversary (:O) and I wanted to give you something reminiscent of our earliest days, when we had all of Europe between us and still managed to watch a wonderful little show while Skyping. This is that something. Most of it is code but even on this strange GitHub repository you may find little cutesy messages if you look around. For the result, click here: ADD LINK. 
 
-Shiny application: https://csqsiew.shinyapps.io/humorous_phrases/
+## I love you and I like you
 
-Preprint: https://psyarxiv.com/3r7fw/
-
-Study Materials on OSF: https://osf.io/wy98d/ 
+(With thanks to https://csqsiew.shinyapps.io/humorous_phrases/ for the code template I stole and remixed.)

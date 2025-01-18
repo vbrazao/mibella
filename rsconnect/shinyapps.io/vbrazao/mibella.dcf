@@ -1,0 +1,10 @@
+name: mibella
+title:
+username: vbrazao
+account: vbrazao
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13751264
+bundleId: 9665184
+url: https://vbrazao.shinyapps.io/mibella/
+version: 1

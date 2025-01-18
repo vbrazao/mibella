@@ -58,7 +58,7 @@ server <- function(input, output, session) {
       sample(
         c("Buba,", "Pumpkin,", "Bebe,", "Yaya,", "mi Bella,", "Білочка,", 
           "Love,", "Darling,", "Boo,", "CIVIL,", "Beb,", "Bubster,", "Буб,",
-          "Bebster,", "Cutie Pie,", "Love"
+          "Bebster,", "Cutie Pie,", "Love,", "Жона,"
           
           ),
         size = 1
@@ -78,7 +78,8 @@ server <- function(input, output, session) {
         "You're so cool, did you know? Now you know.",
         "You make me feel like a million bucks, you do...",
         "Gosto de ti - dos pés aos cabelos - da ponta dos dedos - até à ponta do nariz",
-        "I was made for you <3"
+        "I was made for you <3",
+        "IT'S OUR BIRTHDAY!"
         
       ), size = 1
     )

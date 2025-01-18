@@ -58,7 +58,7 @@ server <- function(input, output, session) {
       sample(
         c("Buba,", "Pumpkin,", "Bebe,", "Yaya,", "mi Bella,", "Білочка,", 
           "Love,", "Darling,", "Boo,", "CIVIL,", "Beb,", "Bubster,", "Буб,",
-          "Bebster,", "Cutie Pie,", "Love,", "Жона," "Sunshine,"
+          "Bebster,", "Cutie Pie,", "Love,", "Жона,", "Sunshine,"
           
           ),
         size = 1

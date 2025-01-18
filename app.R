@@ -77,7 +77,8 @@ server <- function(input, output, session) {
         "Com licença, obrigado, com licençaobrigadocomlic-",
         "You're so cool, did you know? Now you know.",
         "You make me feel like a million bucks, you do...",
-        "Gosto de ti - dos pés aos cabelos - da ponta dos dedos - até à ponta do nariz"
+        "Gosto de ti - dos pés aos cabelos - da ponta dos dedos - até à ponta do nariz",
+        "I was made for you <3"
         
       ), size = 1
     )
